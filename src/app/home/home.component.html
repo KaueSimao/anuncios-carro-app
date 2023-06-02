@@ -1,0 +1,14 @@
+<nav>
+  <a routerLink="/" routerLinkActive="active">Home</a>
+  <a routerLink="/about" routerLinkActive="active">About</a>
+  <a routerLink="/contact" routerLinkActive="active">Contact</a>
+</nav>
+<div class="card" *ngFor="let anuncio of anuncios">
+  <img class="card-img-top" src="{{ anuncio.imagem }}" alt="{{ anuncio.titulo }}">
+  <div class="card-body">
+    <h5 class="card-title">{{ anuncio.titulo }}</h5>
+    <p class="card-text">{{ anuncio.descricao }}</p>
+    <p class="card-text">Preço: {{ anuncio.preco }}</p>
+    <p class="card-text">Data de validade: {{ anuncio.dataValidade | date }}</p>
+  </div>
+</div>

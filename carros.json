@@ -1,0 +1,31 @@
+{
+  "carros": [
+    {
+      "id": 1,
+      "título": "Toyota Corolla",
+      "descrição": "Carro sedan com excelente desempenho e conforto.",
+      "preço": 98000,
+      "data de validade": "2023-06-30",
+      "imagem": "https://exemplo.com/imagem1.jpg",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "título": "Honda Civic",
+      "descrição": "Carro sedan com design moderno e tecnologia avançada.",
+      "preço": 90000,
+      "data de validade": "2023-07-15",
+      "imagem": "https://exemplo.com/imagem2.jpg",
+      "status": "ativo"
+    },
+    {
+      "id": 3,
+      "título": "Volkswagen Golf",
+      "descrição": "Carro hatchback esportivo e econômico.",
+      "preço": 75000,
+      "data de validade": "2023-06-30",
+      "imagem": "https://exemplo.com/imagem3.jpg",
+      "status": "desativo"
+    }
+  ]
+}

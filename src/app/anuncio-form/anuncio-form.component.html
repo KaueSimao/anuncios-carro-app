@@ -1,0 +1,30 @@
+<form (ngSubmit)="salvarAnuncio()">
+  <div class="form-group">
+    <label for="titulo">Título</label>
+    <input type="text" class="form-control" id="titulo" [(ngModel)]="anuncio.titulo" name="titulo" required>
+  </div>
+  <div class="form-group">
+    <label for="descricao">Descrição</label>
+    <textarea class="form-control" id="descricao" [(ngModel)]="anuncio.descricao" name="descricao" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="preco">Preço</label>
+    <input type="number" class="form-control" id="preco" [(ngModel)]="anuncio.preco" name="preco" required>
+  </div>
+  <div class="form-group">
+    <label for="dataValidade">Data de Validade</label>
+    <input type="date" class="form-control" id="dataValidade" [(ngModel)]="anuncio.dataValidade" name="dataValidade" required>
+  </div>
+  <div class="form-group">
+    <label for="imagem">Imagem (Link)</label>
+    <input type="text" class="form-control" id="imagem" [(ngModel)]="anuncio.imagem" name="imagem" required>
+  </div>
+  <div class="form-group">
+    <label for="status">Status</label>
+    <select class="form-control" id="status" [(ngModel)]="anuncio.status" name="status" required>
+      <option value="ativo">Ativo</option>
+      <option value="desativo">Desativo</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Salvar</button>
+</form>

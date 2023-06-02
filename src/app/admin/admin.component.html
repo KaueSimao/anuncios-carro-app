@@ -1,0 +1,28 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Descrição</th>
+      <th>Preço</th>
+      <th>Data de validade</th>
+      <th>Status</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let anuncio of anuncios">
+      <td>{{ anuncio.id }}</td>
+      <td>{{ anuncio.titulo }}</td>
+      <td>{{ anuncio.descricao }}</td>
+      <td>{{ anuncio.preco }}</td>
+      <td>{{ anuncio.dataValidade | date }}</td>
+      <td>{{ anuncio.status }}</td>
+      <td>
+        <button class="btn btn-primary" (click)="editarAnuncio(anuncio.id)">Editar</button>
+        <button class="btn btn-danger" (click)="excluirAnuncio(anuncio.id)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<button class="btn btn-success" (click)="cadastrarAnuncio()">Cadastrar Anúncio</button>
